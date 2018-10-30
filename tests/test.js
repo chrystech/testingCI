@@ -16,7 +16,7 @@ try {
         })
     });
 } catch(e){
-    console.log('##teamcity[testFailed name=\'System can send an email to postmark to be delivered to a user\' message=\'" + e.message + "\' details=\'" + e + "\']')
+    console.log('##teamcity[testFailed name=\'test2\' message=' + e.message + ' details=' + e + ']');
 }
 
 console.log('##teamcity[testFinished name=\'test2\']');
