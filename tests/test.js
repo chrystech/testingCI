@@ -15,7 +15,7 @@ console.log('##teamcity[testStarted name=\'test2\']');
             try {
                 expect(2 + 5).to.be.equal(4);
             } catch(e){
-                console.log('##teamcity[testFailed name=\'test2\' message=' + e.message + ' details=' + e + ']');
+                console.log('##teamcity[testFailed name=\'test2\' message=\'' + e.message + '\' details=\'' + e + '\']');
                 expect(e).to.be.null();
             }
         })
